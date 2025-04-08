@@ -4,7 +4,6 @@ function makeGrid(size) {
     const container = document.querySelector(".container");
     for(let i = 0; i < size * size; i++) {
         const square = document.createElement("div");
-        square.textContent = "test";
         container.appendChild(square);
     }
 
