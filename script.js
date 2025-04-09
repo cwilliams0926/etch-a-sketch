@@ -25,11 +25,19 @@ function addColoring() {
 
 function removeGrid() {
     const rows = document.querySelectorAll(".row");
-    rows.remove();
+    rows.forEach((row) => {
+        row.remove();
+    })
 }
 
 function changeSize() {
     const newSize = prompt("Enter new size: ");
+    if(newSize > 100) 
+        alert("Size cannot be greater than 100");
+    else {
+        removeGrid();
+        makeGrid(newSize);
+    }
 }
 
 makeGrid(16);
