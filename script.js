@@ -10,12 +10,17 @@ function makeGrid(size) {
             row.appendChild(square);
         }
     }
+    addColoring();
+}
+
+function addColoring() {
+    const squares = document.querySelectorAll(".square");
+    squares.forEach((square) => {
+        square.addEventListener("mouseover", () => {
+            square.style.backgroundColor = "black";});
+    })
 }
 
 makeGrid(16);
 
-const squares = document.querySelectorAll(".square");
-squares.forEach((square) => {
-    square.addEventListener("mouseover", () => {
-        square.style.backgroundColor = "black";});
-})
+
