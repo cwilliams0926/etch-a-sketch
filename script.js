@@ -1,6 +1,4 @@
 function makeGrid(size) {
-    // for loop up to grid size that makes divs
-    // and makes them part of class "square"
     const container = document.querySelector(".container");
     for(let i = 0; i < size; i++) {
         const row = document.createElement("div");
@@ -12,8 +10,11 @@ function makeGrid(size) {
             row.appendChild(square);
         }
     }
-
-    // append the divs to container div
 }
 
 makeGrid(16);
+
+const squares = document.querySelectorAll(".square");
+squares.forEach((square) => {
+    square.addEventListener("mouseover", () => {square.style.backgroundColor = "black";});
+})
