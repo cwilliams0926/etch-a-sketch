@@ -21,6 +21,13 @@ function addColoring() {
     })
 }
 
+function changeSize() {
+
+}
+
+const MAX_SIZE = 100;
+
 makeGrid(16);
 
-
+const button = document.querySelector("button");
+button.addEventListener("click", changeSize);
