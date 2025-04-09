@@ -23,6 +23,7 @@ function addColoring() {
     })
 }
 
+// When we change the size of the grid we need to remove the old one
 function removeGrid() {
     const rows = document.querySelectorAll(".row");
     rows.forEach((row) => {
@@ -40,7 +41,7 @@ function changeSize() {
     }
 }
 
-makeGrid(16);
+makeGrid(16); // Grid starts as 16x16
 
 const button = document.querySelector("button");
 button.addEventListener("click", changeSize);
