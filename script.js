@@ -23,6 +23,11 @@ function addColoring() {
     })
 }
 
+function removeGrid() {
+    const rows = document.querySelectorAll(".row");
+    rows.remove();
+}
+
 function changeSize() {
     const newSize = prompt("Enter new size: ");
 }
