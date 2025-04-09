@@ -9,6 +9,6 @@
     flex-wrap: wrap;
 }
 
-.container div {
-    height: width;
+.row {
+    display: flex;
 }
