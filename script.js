@@ -1,3 +1,5 @@
+const MAX_SIZE = 100;
+
 function makeGrid(size) {
     const container = document.querySelector(".container");
     for(let i = 0; i < size; i++) {
@@ -22,10 +24,8 @@ function addColoring() {
 }
 
 function changeSize() {
-
+    const newSize = prompt("Enter new size: ");
 }
-
-const MAX_SIZE = 100;
 
 makeGrid(16);
 
