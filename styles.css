@@ -4,6 +4,18 @@
     padding: 0;
 }
 
+.header {
+    display: flex;
+    background-color: lightslategrey;
+    height: 64px;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+
+}
+
 .outer-container {
     display: flex;
     justify-content: center;
