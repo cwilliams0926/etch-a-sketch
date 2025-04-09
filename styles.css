@@ -19,7 +19,6 @@
 
 .square {
     aspect-ratio: 1 / 1;
-    width: 100%;
     border: solid 1px olivedrab;
-    padding-top: 100%;
+    width: 100%;
 }
