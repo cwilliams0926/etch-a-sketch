@@ -1,5 +1,3 @@
-const MAX_SIZE = 100;
-
 function makeGrid(size) {
     const container = document.querySelector(".container");
     for(let i = 0; i < size; i++) {
@@ -40,6 +38,8 @@ function changeSize() {
         makeGrid(newSize);
     }
 }
+
+const MAX_SIZE = 100;
 
 makeGrid(16); // Grid starts as 16x16
 
